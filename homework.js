@@ -4,17 +4,13 @@
 var colors = [["yellow","grey",],["orange","black"]];
 console.log(colors[1][0]);
 
-
-
 function person(name){
- return name;
-}
+ return "I think " + name + " is a cool guy";
+ }
+console.log(person("Jeff"));
+console.log(person("Alex"));
+console.log(person("Matt"));
 
-console.log("I think " + person("Jeff") + " is a cool guy");
-
-console.log("I think " + person("Matt") + " is a cool guy");
-
-console.log("I think " + person("Alex") + " is a cool guy");
 
 // print song to the console, in its entirety, using a for loop
 for(var i = 99; i > 0; i--){
