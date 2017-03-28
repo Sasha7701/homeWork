@@ -1,8 +1,9 @@
 
 
 // two dimensional array, print two items to the console.
-var colors = ["red","blue",["yellow","grey",],["orange","black"]];
-console.log(colors[2]);
+var colors = [["yellow","grey",],["orange","black"]];
+console.log(colors[1][0]);
+
 
 
 function person(name){
@@ -16,9 +17,10 @@ console.log("I think " + person("Matt") + " is a cool guy");
 console.log("I think " + person("Alex") + " is a cool guy");
 
 // print song to the console, in its entirety, using a for loop
-for(i = 0; i <= 99; i++){
+for(var i = 99; i > 0; i--){
   console.log(i + " bottles of beer on the wall");
 }
+
 
 // while loop 
 var i = 99;
@@ -30,11 +32,22 @@ var i = 99;
   }
 
 // declare a function that takes in an array as an argument
-  var myArray = ["Ford", "BMW", "Nissan"];
+/*  var myArray = ["Ford", "BMW", "Nissan"];
 function arrayCounter (array) {
     for(var i = 0; i < array.length; i++) {
         array.reverse();
         console.log(array[i]);
     }
 }
-console.log(arrayCounter(myArray));
+arrayCounter(myArray);
+*/
+
+var myArray = ["Ford", "BMW", "Nissan"];
+function arrayCounter (array) {
+for (var i = array.length - 1; i >= 0; --i) {
+  console.log(array[i]);
+  }
+}
+
+arrayCounter(myArray);
+
